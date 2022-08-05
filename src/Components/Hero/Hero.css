@@ -1,0 +1,57 @@
+.hero{
+    display: flex;
+    justify-content: space-between;
+}
+.hero-left{
+    padding-top: 1.5rem;
+    padding: 2rem;
+    flex: 3;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+.hero-right{
+    flex: 1;
+}
+.ad{
+    margin-top: 4rem;
+    border-radius: 4rem;
+    width: fit-content;
+    padding: 20px 13px;
+    background-color: #363d42;
+    text-transform: uppercase;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.ad>div{
+    position: absolute;
+    background: var(--orange);
+    height: 80%;
+    left: 8px;
+    border-radius: 3rem;
+    width: 5.4rem;
+    z-index: 1;
+}
+.ad>span{
+    z-index: 2;
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: white;
+    text-overflow: inherit;
+}
+.hero-text>div:nth-of-type(3){
+    font-size: 1rem;
+    font-weight: 100;
+    text-transform: none;
+    width: 80%;
+    letter-spacing: 1px;
+}
