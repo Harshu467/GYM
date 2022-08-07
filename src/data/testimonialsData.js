@@ -12,13 +12,13 @@ export const testimonialsData = [
   },
   {
     image: image2,
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsam, ab itaque nam perferendis impedit sint ',
+    review: 'I’ve been going for a little bit and am already seeing a big change in my energy levels and body. It’s great! I feel 10 years younger! ',
     name: 'JOHN KEVIN',
     status: 'COACH'
   },
   {
     image : image3,
-    review:' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima aspernatur quod voluptatem',
+    review:' Hands down, best choice I’ve made training at Fit Club. VERY friendly team who make me actually want to go train.',
     name: 'FRANKLIN',
     status: "CUSTOMER"
   }
