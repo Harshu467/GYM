@@ -18,7 +18,7 @@
     display: flex;
     gap: 4rem;
 }
-.social-links>img{
+.social-links>a>img{
     cursor: pointer;
     width: 2rem;
     height: 2rem;
