@@ -4,7 +4,9 @@ import { testimonialsData } from '../../data/testimonialsData'
 import { useState } from 'react'
 import leftArrow from '../../assets/leftArrow.png'
 import rightArrow from '../../assets/rightArrow.png'
+import {motion} from 'framer-motion'
 const Testimonials = () => {
+    const transition = { type: 'spring', duration: 3 }
     const[select,setselect]=useState(0);
     const tLength = testimonialsData.length;
   return (
@@ -13,7 +15,13 @@ const Testimonials = () => {
             <span>Testimonials</span>
             <span className='stroke-text'>What they</span>
             <span>Say About us</span>
-            <span>{testimonialsData[select].review}</span>
+            <motion.span
+            transition={transition}
+            key={select}
+            initial={{opacity:0,x:-100}}
+            animate={{opacity:1,x:0}}
+            exit={{opacity:0,x:100}}
+            >{testimonialsData[select].review}</motion.span>
             <span>
                 <span style={{color:'var(--orange)'}}>
                     {testimonialsData[select].name}
@@ -22,9 +30,23 @@ const Testimonials = () => {
             </span>
         </div>
         <div className="right-t">
-            <div ></div>
-            <div ></div>
-            <img src={testimonialsData[select].image} alt="" />    
+            <motion.div 
+            initial={{opacity:0,x:-100}}
+            transition={{...transition,duration:2}}
+            whileInView={{opacity:1,x:0}}
+            ></motion.div>
+            <motion.div
+            initial={{opacity:0,x:100}}
+            transition={{...transition,duration:2}}
+            whileInView={{opacity:1,x:0}}
+            ></motion.div>
+            <motion.img 
+            transition={transition}
+            key={select}
+            initial={{opacity:0,x:100}}
+            animate={{opacity:1,x:0}}
+            exit={{opacity:0,x:-100}}
+            src={testimonialsData[select].image} alt="" />    
             <div className="arrows">
                 <img src={leftArrow} 
                 onClick={()=>{
