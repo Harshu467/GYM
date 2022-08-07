@@ -10,9 +10,9 @@ const Footer = () => {
             <hr />
             <div className="footer">
                 <div className="social-links">
-                    <img src={github} alt="" />
-                    <img src={instagram} alt="" />
-                    <img src={linkedin} alt="" />
+                    <a href='https://github.com/Harshu467' ><img src={github} alt="" /></a>
+                    <a href='https://www.instagram.com/harshup_28/' ><img src={instagram} alt="" /></a>
+                    <a href='https://www.linkedin.com/in/harsh-upadhye-b0269a213/' ><img src={linkedin} alt="" /></a>
                 </div>
                 <div className="logo-f">
                     <img src={logo} alt="" />
