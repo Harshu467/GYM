@@ -72,3 +72,36 @@
     cursor: pointer;
     width: 1.5rem;
 }
+@media screen and (max-width:760px){
+    .testimonials{
+        flex-direction: column;
+    }
+    .left-t>:nth-child(2){
+        font-size: x-large;
+    }
+    .left-t>:nth-child(3){
+        font-size: x-large;
+    }
+    .right-t{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .right-t>div{
+        position: relative;
+        display: none;
+    }
+    .right-t>img{
+        position: relative;
+        top: 0%;
+        right: 0;
+        align-self: center;
+    }
+    .right-t>:last-child{
+        bottom: 0;
+        left: 0;
+        display: block;
+    }
+}
