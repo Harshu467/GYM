@@ -11,6 +11,7 @@
     flex-direction: column;
     gap: 4rem;
     justify-content: center;
+
     align-items: center;
     height: 20rem;
 }
